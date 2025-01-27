@@ -1,0 +1,36 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #000;
+    width: 50%;
+}
+
+#board {
+    width: 600px;
+    height: 600px;
+
+    background-color: white;
+    border: black 4px solid;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 100px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: black 2px solid;
+}
