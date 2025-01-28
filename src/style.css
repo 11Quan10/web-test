@@ -1,5 +1,7 @@
 body {
+    padding: 20px;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -20,9 +22,15 @@ hr {
     flex-wrap: wrap;
 }
 
+#message {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
 .square {
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
 
     display: flex;
     justify-content: center;
@@ -30,7 +38,16 @@ hr {
 
     font-size: 100px;
     font-weight: bold;
-    color: black;
     background-color: white;
-    border: black 2px solid;
+    border: black 5px solid;
+}
+
+.squareX {
+    background-color: white;
+    color: black;
+}
+
+.squareO {
+    background-color: white;
+    color: black;
 }
