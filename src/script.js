@@ -9,6 +9,7 @@ var win = false;
 var gameOver = false;
 
 window.onload = function () {
+    document.getElementById("message").innerText = "Player 1's turn";
     setGame();
 }
 
@@ -36,14 +37,14 @@ function setPiece(square, num) {
     }
 
     let r = Math.floor(num/3), c = num%3;
-    player = (turns&1) ? "O" : 'X';
+    turns++;
+    player = (turns&1) ? 'X' : 'O';
     board[r][c] = player;
 
-    document.getElementById("message").innerText = "Player " + ((player == 'X') ? '1' : '2') + "'s turn";
+    document.getElementById("message").innerText = "Player " + ((turns&1) ? '2' : '1') + "'s turn";
 
     square.innerText = player;
     square.classList.add("square" + player);
-    turns++;
 
     checkWinner(num);
 }
