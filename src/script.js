@@ -1,19 +1,30 @@
 // import { useState } from 'react';
 
 var board;
-var turns = 0;
+var turns;
 var player;
+var win;
+var gameOver;
 var rows = 3;
 var columns = 3;
-var win = false;
-var gameOver = false;
 
 window.onload = function () {
     document.getElementById("message").innerText = "Player 1's turn";
+    document.getElementById("reset-button").addEventListener("click", resetGame);
+    setGame();
+}
+
+function resetGame() {
+    document.getElementById("message").innerText = "Player 1's turn";
+    document.getElementById("board").innerHTML = "";
     setGame();
 }
 
 function setGame() {
+    turns = 0;
+    win = false;
+    gameOver = false;
+
     board = [
         [null, null, null],
         [null, null, null],
