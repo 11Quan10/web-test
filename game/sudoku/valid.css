@@ -1,0 +1,119 @@
+body {
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #000;
+    width: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10%;
+    height: 100vh;
+}
+
+#board {
+    width: 720px;
+    height: 720px;
+
+    background-color: white;
+    border: black 4px solid;
+    margin-left: 12.5%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 76px;
+    height: 76px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    border: black 1px solid;
+}
+
+.square:focus {
+    background-color: yellow;
+}
+
+.squareHighlight {
+    background-color: rgb(255, 255, 200);
+}
+
+.square3x3 {
+    width: 234px;
+    height: 234px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    border: black 3px solid;
+}
+
+.function {
+    display: inline-flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    row-gap: 10px;
+}
+
+#validate-button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    border: black 3px solid;
+}
+
+#reset-button {
+    margin-top: 200 px;
+    padding: 10px 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    border: black 3px solid;
+}
+
+#resultMessage {
+    margin: 25px 25px;
+    text-align: center;
+}
+
+.messageValid {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    margin-top: 30px;
+}
+
+.messageInvalid {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    margin-top: 30px;
+}
